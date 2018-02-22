@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calcular les quotes d'una hipoteca</title><!--títol que apareix al navegador-->
+        <script src="js/js9.js"></script><!--enllaç a l'arxiu javascript-->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/><!--enllaç al boostrap-->
+        <link rel="stylesheet" type="text/css" href="css/fulldestil9.css"/>
+        <meta charset="utf-8"><!--per poder incloure caràcter estranys-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><!--enllaç a squery per un efecte del boto-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><!--enllaç a un altre bootstrap-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--enllaç a font awesome per poder posar icones-->
+    </head>
+    <body>
+        <div class="container"><!--conté la capçalera i tot el cos del formulari-->
+            <div id="loginbox" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2"><!--capçalera del requadre-->
+                <div id="titol" class="panel panel-info">
+                    <div class="panel-heading">
+                        <div class="panel-title"><i class="fa fa-usd" aria-hidden="true"> Càlcul de les quotes d'una hipoteca</i></div>
+                    </div>
+                    <div class="panel-body" ><!--cos del formulari-->
+                        <form id="loginform" class="form-horizontal" role="form">
+                            <!--cada input té un div, a dins hi ha un span (per crear posar un tros gris), i un <i> amb l'icona,
+                                tot seguit hi ha l'input pròpiament dit i després es tanca el div-->
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-calendar"></i> Data inicial</i></span><!--data inicial amb l'icona-->
+                                <input  class="form-control" type="date" name="diainici" id="diainici"  required>    
+                            </div>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-money"> Capital</i></span><!--capital amb l'icona-->
+                                <input class="form-control" type="number" min="1" max="1000000" name="capital" id="capital" required>
+                            </div>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-percent"> Interessos</span></i><!--interessos amb l'icona-->
+                                <input class="form-control" type="number" step=".01" min="0.01" name="interessos" id="interessos" required>
+                            </div>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-calendar-plus-o"> Termini en mesos</span></i><!--termini amb l'icona-->
+                                <input class="form-control" required type="number" min="1" max="480" name="termini" id="termini" >
+                            </div>
+                            <input id="boto" href="#" data-toggle="tooltip" data-placement="bottom" title="clica aquí" class="btn btn-primary" type="button" value="Acceptar" onclick="calcular()"><!--botó que crida la funció-->
+                            <div class="form-group">
+                                <div class="col-md-12 control">
+                                    <div id="linia"><!--línia inferior del formulari-->
+                                        <i class="fa fa-exclamation-triangle">
+                                            Recorda que has d'emplenar tots els camps!
+                                        </i>
+                                    </div>
+                                </div>
+                            </div> 
+                        </form>
+                    </div>
+                </div>
+                <div id="errors"><!--el que apareix escrit en el document-->
+                    <div id="quota" class="label label-success"></div>
+                    <div id="error0" class="label label-success"></div>
+                    <div id="error1" class="label label-success"></div>
+                    <div id="error2" class="label label-success"></div>
+                    <div id="error3" class="label label-success"></div>
+                    <div id="error4" class="label label-success"></div>
+                    <div id="datafi" class="label label-success"></div>
+                </div>
+            </div>
+        </div>
+        <script>/*funció JQuery per crear un efecte en passar el ratolí per damunt el botó*/
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();   
+            });
+        </script>
+    </body>
+    <!--Per: Victòria Binimelis Vadell. Gener 2018-->
+</html>

@@ -1,0 +1,44 @@
+body { /*estil general del cos de la pàgina*/
+  color: #3f3f3f; /*color de la lletra*/
+  font-family: system-ui;/*tipografia*/
+}
+
+#frase{/*característiques de la frase de la part superior*/
+  width: 570px;
+  margin: auto;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  text-align: center;
+  border:  4px solid #000000;
+}
+
+#calendari {/*imatge*/
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.button1{/*característiques del botó que torna a cridar la funció*/
+  font-family: system-ui;
+  background-color: #ffffff; /*color de fons*/
+  color: #000000; /*color de la lletra*/
+  border: 3px solid #000000;  
+  width: 100px; 
+  height: 35px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 19px;
+}
+
+.button1:hover { /*hover per canviar el color de fons i el color de la lletra en passar-hi amb el cursor per damunt*/
+  background-color: #000000; /*color del fons*/
+  color: #ffffff; /*color de la lletra*/
+}
+
+#boto{
+  width: 100px;
+  margin: auto;
+}
+/*Per: Victòria Binimelis Vadell. Desembre 2017*/

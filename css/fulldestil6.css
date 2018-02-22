@@ -1,0 +1,85 @@
+body { /*estil general del cos de la pàgina*/
+  color: #b3b300; /*color de la lletra*/
+  background-color: #afce00;/*color de fons de la pagina*/
+  font-family: system-ui;/*tipografia*/
+}
+
+#capçalera{ /*estil de la capçalera on hi ha el títol i el text explicatiu*/
+    background-color: #d2ee62; /*color de fons*/
+    width: 400px;/*amplada del div de la capçalera*/
+    margin: auto;/*per centrar el div*/
+    margin-bottom: 20px;
+    border-radius: 15px; /*arrodonir els caires*/
+  }
+  
+  hr {
+    width: 300px; /*amplada de la línia que separa el títol del subtítol*/
+  }
+
+  #titol{/*estil del títol de la capçalera*/
+    text-align:center;/*per centrar el text*/
+    padding-top: 30px;
+    font-size: 40px;/*mida de la lletra*/
+    color: #b3b300; /*color de la lletra*/
+  }
+
+  #subtitol{
+    text-align:center;/*per centrar el text*/
+    color: #666600; /*color de la lletra*/
+    padding-bottom: 20px;
+  }
+
+  #taula {
+    background-color: #d2ee62;/*color de fons de la taula*/
+    width: 100px;/*amplada del div que ocupa la taula*/
+    text-align: center;/*per centrar el text*/
+    font-size: 30px;/*mida de la lletra*/
+    margin: auto;/*per centrar el div*/
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 20px;
+  }
+
+  p{
+    color: #666600; /*color de la lletra*/
+    font-size: 15px;
+    text-align:center;
+    margin-top: 20px;
+  }
+
+  .button1 { /*estil del botó que torna a cridar la funció*/
+    font-family: system-ui;
+    background-color: #b3b300; /*color de fons*/
+    color: #d2ee62; /*color de la lletra*/
+    border: 3px solid #d2ee62;  
+    width: 245px; 
+    height: 35px;
+    border-radius: 10px; /*arrodonir els caires*/ 
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 19px;
+  }
+
+  .button1:hover { /*hover per canviar el color de fons i el color de la lletra en passar-hi amb el cursor per damunt*/
+    background-color: #d2ee62; /*color del fons*/
+    color: #b3b300; /*color de la lletra*/
+  }
+
+  #boto {
+    width: 245px;
+    margin: auto;
+  }
+
+  #autoria{
+    background-color: #d2ee62; /*color de fons*/
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    width: 400px;
+    margin: auto;
+    border-radius: 15px; /*arrodonir els caires*/
+  }
+
+
+
+

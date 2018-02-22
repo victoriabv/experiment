@@ -1,0 +1,13 @@
+.container {/*característiques del contenidor que conté el formulari i la taula*/
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+#titol{/*característiques del títol superior*/
+  text-align: center;
+}
+
+#formulari{/*característiques del formulari*/
+  margin-bottom: 20px;
+}

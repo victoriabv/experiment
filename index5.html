@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Multiplicador</title><!--Aquest és el títol que es veurà a la pestanya del navegador-->
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="css/fulldestil5.css"/><!--Enllaç al full d'estil css-->
+    <link rel="shortcut icon" href="img/favicon5.ico" type="image/x-icon">
+</head>
+<body style="background-color: #669999"><!--he hagut de posaR el color d'estil aquí perque si el posava al css no me funcionava--> 
+	<script>
+		function multiplicador(){ //funció per crear la taula de multiplicar//
+			document.body.innerHTML = ''; //esborrar la pàgina cada vegada que es vulgui introduir un nou valor//
+			document.write("<link rel='stylesheet' type='text/css' href='css/bootstrap.css'/>"); //enllaç al boostrap perque recuperi l'estil quan es torna a cridar la funció//
+            document.write("<link rel='stylesheet' type='text/css' href='css/fulldestil.css'/>"); //enllaç al full d'estil perque recuperi l'estil quan es torna a cridar la funció//
+			document.write("<div id='capçalera'><h1 id='titol'>Multiplicador</h1>"); //títol//
+			document.write("<hr>");//línia que separa el títol del subtítol//
+			document.write("<p id='text_inicial'>A continuació apareixerà la taula de multiplicar del número que heu introduit</p></div>"); //text explicatiu//
+			document.write("<div><table id='taula' class='table-striped'>"); //inici de la taula//
+			var x; //declaració de la primera variable, que serà la que introduirà l'usuari//
+            var y; //declaració de la segona variable//
+            var repetir=true; //variable booleana per poder a repetir la funció//
+            while(repetir==true){ //repetir la funció sempre que la booleana sigui true//
+               var x=prompt("Introdueix un número de l'1 al 9 per generar la seva taula de multiplicar"); //finestra emergent que demana a l'usuari introduir un valor//
+               var x=parseInt(x);
+               if(x>=1 && x<=9 && x!=NaN){  //condició que ha de complir el valor per a crear la taula de multiplicar//
+               document.write("<h3 id='titol2'>Taula de multiplicar del "+x+"</h3>"); //nom de la taula de multiplicar//
+                for (var y=1; y <= 10; y++){ //instruccions per generar la taula de multiplicar//
+                    document.write("<tr id='tr'>");
+                    document.write("<td id='row'>" + x + "x" + y + "=" + "</td>" + "<td>" + (x*y) + "</td>"); //operació de multiplicació//
+                    document.write("</tr>");
+                }
+                document.write("</table></div>"); //final de la taula//
+                document.write("<input type='button' class='button1' value='Introduir un altre número' onclick='multiplicador();'>"); //botó per tornar a cridar la funció//
+                document.write("<div id='autoria'><p>Victòria Binimelis Vadell <br>Novembre 2017<br>Felanitx</p></div>"); //peu de pàgina//
+                repetir=false; //canvi a false de la variable booleana per poder sortir del bucle//
+            }
+            else{ //instruccions per quan s'introdueix un valor no valid//
+                alert("Has introduit un valor no vàlid"); //missatge d'error en cas d'haver introduit un valor no vàlid//
+                repetir=confirm("Vols introduir un altre número?"); //missatge per demanar si es vol introduir un nou valor//
+            }                
+        }     
+    }
+    multiplicador(); //final de la funció//  
+</script>  
+</body>
+<!--Per: Victòria Binimelis Vadell. Novembre 2017-->
+</html>

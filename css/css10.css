@@ -1,0 +1,73 @@
+#nota{/*mida del camp nota*/
+    width: 50px;
+   
+}
+
+#nota1{/*mida i color del camp nota*/
+    width: 50px;
+    color: #777;
+}
+
+#divtaula{/*característiques de la taula*/
+    width: 900px;
+    background-color: white;
+    margin: auto;
+    margin-top: 30px;    
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
+
+.table-hover > tbody > tr:hover {/*característiques hover de la taula*/
+    background-color: rgb(192, 191, 191);
+}
+
+.table-hover{/*característiques hover de la taula*/
+    color: #777;
+}
+
+#eliminar{/*característiques del botó eliminar de la taula, ja que si ho feia posant només
+    la classe, no me funcionava*/
+    position: absolute;
+    z-index: -1;
+    width: 300%;
+    height: 100%;
+    background: rgba(21, 219, 97, 0.8);
+    background: -webkit-linear-gradient(-135deg, #00d58e, #49e535, #00d58e, #49e535);
+    background: -o-linear-gradient(-135deg, #00d58e, #49e535, #00d58e, #49e535);
+    background: -moz-linear-gradient(-135deg, #00d58e, #49e535, #00d58e, #49e535);
+    background: linear-gradient(-135deg, #00d58e, #49e535, #00d58e, #49e535);
+    top: 0;
+
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  
+    font-family: Poppins-Medium;
+    font-size: 16px;
+    color: #fff;
+
+    display: block;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+    width: 100px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+/*Per: Victòria Binimelis Vadell. Febrer 2018*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+

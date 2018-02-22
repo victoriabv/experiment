@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NúmPrimers</title><!--nom de la pàgina-->
+        <script src="js/funcio6.js"></script><!--enllaç amb l'arxiu javascript on hi ha la funció-->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/><!--enllaç al bootstrap-->
+        <link rel="stylesheet" type="text/css" href="css/fulldestil6.css"/><!--enllaç al full d'estil propi-->
+    </head>
+    <body>
+       <h1>Números primers</h1><!--títol superior-->
+       <script>
+           function numerosprimers () {//funció per generar els números primers a partir d'un número introduit per l'usuari//
+               document.body.innerHTML = '';//per borrar la pàgina quan es torna a carregar//
+               document.write("<link rel='stylesheet' type='text/css' href='css/bootstrap.css'/>");//enllaç al boostrap perque recuperi l'estil quan es torna a cridar la funció//
+               document.write("<link rel='stylesheet' type='text/css' href='css/fulldestil.css'/>");//enllaç al full d'estil perque recuperi l'estil quan es torna a cridar la funció//
+               var i=2;//declaració de la variable que serà els número primers obtinguts//
+               var repetir=true;//variable booleana per poder a repetir la funció//
+               while(repetir==true){//bucle per repetir la funció sempre que la booleana sigui true//
+                 var numero = prompt("Introdueix un número");/*finestra emergent per demanar un número a l'usuari*/
+                 document.write("<div id='capçalera'><h1 id='titol'>Números primers</h1>");//títol//
+                 document.write("<hr>");//línia que separa el títol del subtítol//
+                 document.write("<h4 id='subtitol'>Els números primers de " + numero + " són:</h4></div>");//subtítol//
+                 document.write("<div id='taula'><table class='table table-hover'>");//inici taula//
+                 if (numero>= 1 && numero!=NaN){//condició que ha de complir el valor per a generar els seus números primers//
+                   for(; i<numero; i++){//instruccions per generar els números primers//
+                       if(numprimers(i)){//per cridar la funció que està a un fitxer extern//
+                        document.write("<tr><td>"+i+"</tr></td>");//escriure files de la taula//
+                      }
+                    }
+                    document.write("</table></div>");//final taula//
+                    document.write("<div id='boto'><input type='button' class='button1' value='Introduir un altre número' onclick='numerosprimers();'></div>");//botó per tornar a cridar la funció//
+                    document.write("<div id='autoria'><p>Victòria Binimelis Vadell <br>Desembre 2017</p></div>");//peu de pàgina//
+                    repetir=false;//canvi a false de la variable booleana per poder sortir del bucle//
+                  }
+                  else{//instruccions per quan s'introdueix un valor no valid//
+                    alert("Has introduit un valor no vàlid");//missatge d'error en cas d'haver introduit un valor no vàlid//
+                    repetir=confirm("Vols introduir un altre número?");//missatge per demanar si es vol introduir un nou valor//
+                  }
+                }
+              }
+              numerosprimers();//final de la funció//  
+        </script>
+    </body>
+    <!--Per: Victòria Binimelis Vadell. Desembre 2017-->
+</html>

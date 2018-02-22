@@ -1,0 +1,206 @@
+<style type="text/css">
+    body {
+    	font-family: Tahoma, Geneva, sans-serif;
+    }/*tipografia de la pàgina web*/
+    
+    .menu {/*menú superior*/
+    	font-family: Tahoma, Geneva, sans-serif;/*tipografia del menú*/
+        font-size: 20px;/*mida de la lletra del menú*/
+	    background-color: #000A4F;/*color del fons del menú*/
+	    padding-bottom: 10px;/*marge intern entre el contingut del menú i la seva caixa, a la part inferior*/
+        width: 1333px;
+	}
+
+    .menuitem {/*ítems del menú*/
+	    display: inline;/*disposició dels ítems del menú superior*/
+	    background-color: #000A4F;/*color del fons dels ítems del menú*/
+	    padding-bottom: 10px;/*marge intern entre l'ítem i la seva caixa, a la part inferior*/
+	    margin: 20px;/*marge entre la caixa de l'ítem i la següent caixa*/
+    }
+
+    #logo {/*logo del menú superior*/
+    	margin-left: 100px;/*marge entre la caixa i la següent, a la part esquerra*/
+    	margin-right: 150px;/*marge entre la caixa i la següent, a la part dreta*/
+    }
+
+    .enllaç{/*classe enllaç, afecta a tots els enllaços de la pàgina*/
+        text-decoration: none;/*per evitar que l'enllaç surti blau i subratllat i mantengui el format que li he posat jo*/
+        color: #198CFB;/*color de la lletra dels enllaços*/
+    }
+
+    .enllaç:hover{/*hover perquè l'enllaç canvii de color quan hi passam per damunt*/
+        text-decoration: none;/*per evitar que l'enllaç surti blau i subratllat i mantengui el format que li he posat jo*/
+        color: white;/*per establir el color que ha de tenir l'enllaç quan hi passam per damunt*/
+    }
+
+    #cercador{
+        font-family: Tahoma, Geneva, sans-serif;/*tipografia del cercador*/
+        background-image: url("../img/platja.jpg");/*imatge de fons del cercador*/
+        width: 1333px;
+        height: 580px;       
+    }
+
+    #titolcercador {
+        font-family: Tahoma, Geneva, sans-serif;/*tipografia del títol del cercador*/
+    	color: white;/*color de lletra del títol del cercador*/
+        margin-left: 410px;
+        padding-top: 20px;
+    }
+
+    .formulari {
+        font-family: Tahoma, Geneva, sans-serif;/*tipografia del formulari*/
+        border-radius: 30px; /*per fer els caires rodons*/
+        border: 4px solid #FFCC00; /*mida i color de les voreres del formulari*/
+        padding: 20px; 
+        width: 530px;
+        height: 400px;
+        margin-left: 400px;
+        background-color: hsla(90, 70%, 90%, 0.6);/*color de fons amb transparència*/
+    }
+
+    .enviar { /*característiques del botó "enviar"*/
+        font-family: Tahoma, Geneva, sans-serif;/*tipografia*/
+        font-size: 20px;
+        width: 80px; 
+        height: 35px;
+        color: #FFCC00;/*color de la lletra*/
+        background-color: white; /*color de fons del botó*/
+        cursor: pointer;
+        border: 2px solid #FFCC00; /*mida i color del contorn del botó*/
+        border-radius: 4px; /*per fer els caires rodons*/
+        margin-left: 450px;
+    }
+
+    input[type=text] { /*característiques de les caselles de text*/
+        padding: 5px 5px;
+        margin: 20px 0;
+        box-sizing: border-box;
+        border: 2px solid #198CFB; /*mida i color del contorn de les caselles*/
+        border-radius: 4px; /*per fer els caires rodons*/
+        width: 406px;
+        height: 35px;
+    }
+
+    input[type=date] { /*característiques dels selectors de data*/
+        padding: 5px 5px;
+        margin: 20px 0;
+        box-sizing: border-box;
+        border: 2px solid #198CFB; /*mida i color del contorn de les caselles*/
+        border-radius: 4px /*per fer els caires rodons*/
+    }
+
+    #sortida { /*identificador de la data de sortida*/
+        margin-left: 30px; 
+    }
+
+    #adults { /*identificador de l'opció de número d'adults*/
+        margin-left: 40px;
+    }
+
+    #infants { /*identificador de l'opció de número d'infants*/
+        margin-left: 40px;
+    }
+
+    #tipushabitacio { /*identificador de l'opció de tipus*/
+        margin-left: 40px;
+    }
+
+    input[type=radio] { /*característiques del boto radio abans de clicar*/
+        -webkit-appearance: none; /*perquè el boto sigui rodó*/
+        width: 20px;
+        height: 20px;
+        border-radius: 50%; /*mida del cercle*/
+        outline: none;
+        box-shadow: 0 0 0 2px #198CFB; /*mida i color del contorn*/
+        background-color: #FFFFFF; /*color de l'interior del cercle*/
+    }
+
+    input[type='radio']:before { /*característiques del boto radió una vegada clicat*/
+        content: ''; /*aparença després de clicat*/
+        display: block; /*disposició*/
+        width: 60%;
+        height: 60%;
+        margin: 20% auto;
+        border-radius: 50%; /*mida del cercle*/ 
+    }
+
+    input[type='radio']:checked:before {
+        background: #FFCC00; /*color del radio una vegada clicat*/
+    }
+
+    Select { /*característiques dels selctors del formulari*/
+        padding: 5px 5px;
+        margin: 20px 0;
+        box-sizing: border-box;
+        border: 2px solid #198CFB; /*mida i color del contorn*/
+        border-radius: 4px;
+    }
+
+    #ofertes { /*característiques del div que inclou les 6 ofertes*/
+        background-color: #198CFB;
+        width: 1333px;
+        height: 850px;
+        padding-top: 10px;
+    }
+
+    #titolofertes {
+        font-family: Tahoma, Geneva, sans-serif; /*tipografia del títol general de les ofertes*/
+        color: #FFCC00; /*color de la lletra del títol*/
+        font-size: 30px;
+        margin-left: 450px;
+        padding-top: 10px; 
+    }
+
+    .oferta { /*classe del div oferta*/
+        background-color: hsla(90, 70%, 90%, 0.5); /*color del fons amb transparència*/
+        width: 300px;
+        height: 300px;
+        display: inline-table; /*disposició de les ofertes*/
+        margin: 20px 70px;
+    }
+
+    .redo {
+        border-radius: 6px; /*classe per arradonir elements*/
+    }
+
+    .nomoferta { /*classe per al nom de les ofertes*/
+        font-family: Tahoma, Geneva, sans-serif; /*tipografia del nom de les ofertes*/
+        color: white; /*color de la lletra*/
+        font-size: 19px; /*mida de la lletra*/
+        margin-left: 15px;
+        margin-top: 30px;
+    }
+
+    .oferta:hover { /*característiques de quan passam per damunt l'oferta*/
+        background-color: #FFCC00; /*color quan passam per damunt l'oferta*/
+        width: 300px;
+        height: 300px;
+        display: inline-table; /*disposició de les ofertes*/
+        margin: 20px 70px; 
+    }
+
+    .menuinferior { /*característiques del menú inferior de la pàgina web*/
+        font-family: Tahoma, Geneva, sans-serif; /*tipografia*/
+        font-size: 20px; /*mida de la lletra*/
+        background-color: #000A4F; /*color del fons*/
+        padding-bottom: 50px;
+        padding-left: 200px;
+        width: 1133px;
+     }
+
+    #copy {
+        font-family: Tahoma, Geneva, sans-serif; /*font del copyright*/
+        font-size: 25px; /*mida del copyright*/
+        color: #FFCC00; /*color de la lletra del copyright*/
+        padding-left: 300px;
+        padding-top: 40px;
+     }
+
+    #logoinferior { /*característiques del logo del menú inferior*/
+        background-color: #000A4F; /*color del fons*/
+        padding-bottom: 30px;
+        padding-left: 500px;
+        padding-top: 20px;
+        width: 833px;
+    }
+    

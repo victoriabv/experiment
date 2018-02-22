@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DiaDeLaSetmana</title><!--títol que apareix a la "pestanya" del navegador-->
+        <script src="js/funciosegle.js"></script><!--enllaç al javascript de la funció per saber el segle-->
+        <script src="js/funcioany.js"></script><!--enllaç al javascript de la funció de l'any-->
+        <script src="js/funcioanybis.js"></script><!--enllaç al javascript de la funció per saber si és any bisest o no-->
+        <script src="js/funciomes.js"></script><!--enllaç al javascript de la funció del mes-->
+        <script src="js/funciodia.js"></script><!--enllaç al javascript del dia-->
+        <link rel="stylesheet" type="text/css" href="css/fulldestil7.css"/><!--enllaç al full d'estil-->
+        <link rel="shortcut icon" href="img/favicon7.ico" type="image/x-icon"><!--enllça a l'icona que apareix a la "pestanya" del navegador-->
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+        var dia=prompt("Introdueix el dia");//demanar el dia a l'usuari//
+        var mes=prompt("Introdueix el mes");//demanar el mes a l'usuari//
+        var any=prompt("Introdueix l'any (entre 1700 i 2299)");//demanar l'any a l'usuari//
+        j= parseInt(dia);//convertir el dia a integer//
+        v= day(dia);//variable dia//
+        
+        document.write("<div id='frase'>El " + dia + " del " + mes +" del "+ any +" era/és/serà "+ v ,"</div>");/*per escriure la frase superior on posa 
+        quin dia de la setmana és l'introduit per l'usuari*/
+        </script>
+        <div id="calendari"><img src="img/calendari.png"/></div><!--imatge-->
+        <form action="file:///E:/server/practica7/index.html"><!--botó per tornar a introduir un dia, un mes i un any-->
+            <div id='boto'><button class='button1'>Repetir</button></div>
+        </form>
+    </body>
+    <!--Per: Victòria Binimelis Vadell. Desembre 2017-->
+</html>
+

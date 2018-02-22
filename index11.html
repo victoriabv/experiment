@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cerca de fotos</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><!--enllaç al jquery--> 
+        <script src="js/js11.js"></script><!--enllaç al fitxer de funcions javascript-->   
+	    <link rel="icon" type="image/png" href="img/favicon11.ico"/><!--enllaç a la imatga que surt a la pipella del servidor-->
+	    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"><!--enllaç al boostrap-->
+        <link rel="stylesheet" type="text/css" href="css/css11.css"><!--enllaç al meu full d'estil-->
+		<link rel="stylesheet" type="text/css" href="animate/animate.css"><!--enllaç per poder posar animacinos-->
+    </head>
+    <body>
+        <div id="titol">
+            <h1 class="sign-up-title">Cerca de fotografies</h1><!--títol superior-->
+        </div>
+        <div class="container"><!--contenidor que conté el formulari i la taula-->
+            <form id="formulari" class="form-inline" onsubmit="return cercar()"><!--formulari per fer la recerca-->
+                <input id="search" type="text" class="form-control" placeholder="Etiquetes">
+                <select id="seleccio" class="form-control">
+                    <option value="all" selected>Totes les etiquetes</option>
+                    <option value="any">Alguna etiqueta</option>
+                </select>
+                <button id="boto" type="submit" class="btn btn-primary">Cercar</button><!--boto per iniciar la recerca-->
+            </form>
+            <div id="table">
+                <table id="taula"  class="table table-bordered"><!--taula on es van inserint les imatges-->
+                    <thead><!--capçalera de la taula-->
+                        <tr>
+                            <th>Nº</th>
+                            <th>LINK</th>
+                            <th>TÍTOL</th>
+                            <th>FOTO</th>
+                            <th>DATA PUBLICACIÓ</th>
+                            <th>AUTOR</th>
+                            <th>ETIQUETES</th>
+                        </tr>
+                    </thead>
+                    <tbody id="costaula"></tbody><!--cos de la taula on s'hi insereixen els resultats de la recerca-->
+                </table>
+            </div>
+        </div>
+    </body>

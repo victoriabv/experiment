@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>eDreams</title><!--Aquest és el títol que es veurà a la pestanya del navegador-->
+	<link rel="shortcut icon" href="img/favicon.ico"/><!--Icona que es veurà a la pestanya del navegador-->
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/fulldestil.css"/><!--Enllaç al full d'estil css-->
+</head>
+<body>
+	<div class="menu"><!--menú superior de la pàgina web-->
+		<div class="menuitem" id="logo"><!--logo del menú superior-->
+			<img width="150px" height="60px" src="img/logo_edreams.png"/>
+		</div>
+		<div class="menuitem"><!--ítem del menú superior-->
+			<a href="#" class="enllaç">Inici</a>
+		</div>
+		<div class="menuitem"><!--ítem del menú superior-->
+			<a href="#" class="enllaç">Vol</a>
+		</div>
+		<div class="menuitem"><!--ítem del menú superior-->
+			<a href="#" class="enllaç">Hotels</a>
+		</div>
+		<div class="menuitem"><!--ítem del menú superior-->
+			<a href="#" class="enllaç">Vol+Hotel</a>
+		</div>
+		<div class="menuitem"><!--ítem del menú superior-->
+			<a href="#" class="enllaç">Cotxes de lloguer</a>
+		</div>
+		<div class="menuitem"><!--ítem del menú superior-->
+			<a href="#" class="enllaç">Trasllats aeroport</a>
+		</div>
+		<div class="menuitem"><!--ítem del menú superior-->
+			<a href="#" class="enllaç">Trens</a>
+		</div>
+	</div>
+	<div id="cercador"><!--div del cercador d'hotels, inclou la imatge de fons, el títol i tot el formulari-->
+		<div id="titolcercador"><h2>Reserva el teu hotel</h2></div><!--títol superior del cercador d'hotels-->
+		<div class="formulari"><!--formulari per a fer la recerca d'hotels-->
+			<form method="post" action="index.html">
+				<label for="hotel"><font color="#198CFB" size="4"><strong>Hotel</strong></font></label><!--per introduir l'hotel que s'està cercant-->
+				<input type="text" name="hotel">
+				<br>
+				<label for="població"><font color="#198CFB" size="4"><strong>Població</strong></font></label><!--per introduir la població on es troba l'hotel que s'està cercant-->
+				<input type="text" name="població">
+				<label for="entrada"><font color="#198CFB" size="4"><strong>Entrada</strong></font></label><!--per introduir el dia d'entrada a l'hotel-->
+				<input type="date" name="entrada">
+				<label for="sortida" id="sortida"><font color="#198CFB" size="4"><strong>Sortida</strong></font></label><!--per introduir el dia de sortida de l'hotel-->
+				<input type="date" name="sortida">
+				<br>
+				<label for="habitacions"><font color="#198CFB" size="3"><strong>Habitacions</strong></font></label><!--per seleccionar el número d'habitacions que es volen cercar-->
+				<select name="habitacions"><!--llistat numèric per triar el número d'habitacions-->
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+				</select>
+				<label id="adults"><font color="#198CFB" size="3"><strong>Adults</strong></font></label><!--per seleccionar el número d'adults-->
+				<select name="adults"><!--llistat numèric per triar el número d'adults-->
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+				</select>
+				<label id="infants"><font color="#198CFB" size="3"><strong>Infants</strong></font></label><!--per seleccionar el número d'infants-->
+				<select name="infants"><!--llistat numèric per triar el número d'infants-->
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+				</select>
+				<br>
+				<label for="estrelles"><font color="#198CFB" size="3"><strong>Estrelles</strong></font></label><!--per seleccionar el número de estrelles de l'hotel-->
+				<select name="estrelles"><!--llistat numèric per triar el número d'estrelles-->
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+				<label for=tipushabitacio id="tipushabitacio"><font color="#198CFB" size="3"><strong>Tipus d'habitació</strong></font></label><!--per selccionar si es vol habitació individual o múltiple-->
+				<input type="radio" name="individual" class="radio"><font color="#198CFB" size="2"><strong>Individual</strong></font>
+				<input type="radio" name="multiple"><font color="#198CFB" size="2"><strong>Múltiple</strong></font>
+				<br>
+				<input type="submit" name="enviar" class="enviar"><!--botó per iniciar la recerca-->
+			</form>
+		</div>	
+	</div>
+</div>
+<div id="ofertes">
+	<h2 id="titolofertes">Les millors ofertes d'eDreams!</h2><!--apartat amb ofertes d'hotels-->
+	<div class="oferta redo"><!--oferta 1-->
+		<div><img class="redo" width="300px" height="200px" src="img/ouagadougou.jpg"/></div><!--imatge de l'oferta 1-->
+		<div class="nomoferta"><a href="#" class="enllaç">Hotels a Ouagadougou des de 10€ la nit</a></div><!--títol de l'oferta 1-->
+	</div>
+	<div class="oferta redo"><!--oferta 2-->
+		<div><img class="redo" width="300px" height="200px" src="img/novazelanda.jpg"/></div><!--imatge de l'oferta 2-->
+		<div class="nomoferta"><a href="#" class="enllaç">Hotels a Nova Zelanda des de 20€ la nit</a></div><!--títol i enllaç de l'oferta 2-->
+	</div>	
+	<div class="oferta redo"><!--oferta 3-->
+		<div><img class="redo" width="300px" height="200px" src="img/vancouver.jpg"/></div><!--imatge de l'oferta 3-->
+		<div class="nomoferta"><a href="#" class="enllaç">Hotels a Vancouver des de 30€ la nit</a></div><!--títol i enllaç de l'oferta 3-->
+	</div>
+	<div class="oferta redo"><!--oferta 4-->
+		<div><img class="redo" width="300px" height="200px" src="img/barcelona.jpg"/></div><!--imatge de l'oferta 4-->
+		<div class="nomoferta"><a href="#" class="enllaç">Hotels a Barcelona des de 15€ la nit</a></div><!--títol i enllaç de l'oferta 4-->
+	</div>	
+	<div class="oferta redo"><!--oferta 5-->
+		<div><img class="redo" width="300px" height="200px" src="img/botswana.jpg"/></div><!--imatge de l'oferta 5-->
+		<div class="nomoferta"><a href="#" class="enllaç">Hotels a Botswana des de 10€ la nit</a></div><!--títol i enllaç de l'oferta 5-->
+	</div>	
+	<div class="oferta redo"><!--oferta 6-->
+		<div><img class="redo" width="300px" height="200px" src="img/berlin.jpg"/></div><!--imatge de l'oferta 6-->
+		<div class="nomoferta"><a href="#" class="enllaç">Hotels a Berlin des de 15€ la nit</a></div><!--títol i enllaç de l'oferta 6-->
+	</div>
+</div>
+<div id="logoinferior"><!--logo del menú inferior de la pàgina web-->
+	<img width="290px" height="110px" src="img/logo_edreams.png"/>
+</div>
+<div class="menuinferior"><!--menú inferior de la pàgina web-->
+	<div class="menuitem"><!--ítem del menú inferior-->
+		<a href="#" class="enllaç">Inici</a>
+	</div>
+	<div class="menuitem"><!--ítem del menú inferior-->
+		<a href="#" class="enllaç">Vol</a>
+	</div>
+	<div class="menuitem"><!--ítem del menú inferior-->
+		<a href="#" class="enllaç">Hotels</a>
+	</div>
+	<div class="menuitem"><!--ítem del menú inferior-->
+		<a href="#" class="enllaç">Vol+Hotel</a>
+	</div>
+	<div class="menuitem"><!--ítem del menú inferior-->
+		<a href="#" class="enllaç">Cotxes de lloguer</a>
+	</div>
+	<div class="menuitem"><!--ítem del menú inferior-->
+		<a href="#" class="enllaç">Trasllats aeroport</a>
+	</div>
+	<div class="menuitem"><!--ítem del menú inferior-->
+		<a href="#" class="enllaç">Trens</a>
+	</div>
+	<div id="copy"><!--copyright del menú inferior-->
+		Copyright &copy; 2017--eDreams
+	</div>
+</div>
+</body>
+</html>

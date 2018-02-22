@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Registre d'alumnes</title>
+        <meta charset="UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><!--enllaç al jquery--> 
+        <script src="js/js10.js"></script><!--enllaç al fitxer de funcions javascript-->   
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link rel="icon" type="image/png" href="images/icons/favicon.ico"/><!--enllaç a la imatga que surt a la pestanya del servidor-->
+	    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"><!--enllaç al boostrap-->
+	    <link rel="stylesheet" type="text/css" href="css/css10.css"><!--enllaç al meu full d'estil-->
+	    <link rel="stylesheet" type="text/css" href="css/main.css"><!--enllaç a un altre full d'estil agafat d'internet-->
+		<link rel="stylesheet" type="text/css" href="animate/animate.css"><!--enllaç per poder posar animacinos-->
+	</head>
+	<body>
+		<div class="bg-contact2" style="background-image: url('images/bg-01.jpg');"><!--div que conté tot el contingut-->
+			<div class="container-contact2"><!--div del formulari-->
+				<div class="wrap-contact2">
+					<form id="formulari" class="animated bounceInDown" class="contact2-form validate-form" onsubmit="return fila();">
+						<span class="contact2-form-title"><!--títol superior-->
+							<h1  class="animated bounceInDown">Registre d'alumnes</h1>
+						</span>
+						<div class="wrap-input2 validate-input"><!--input del nom-->
+							<input class="input2" type="text" name="nom" id="nom">
+							<span class="focus-input2" data-placeholder="NOM"></span><!--cada input té la classé focus perquè
+							crei l'efecte quan està clickat, també té el placeholder amb el nom de l'input-->
+						</div>
+						<div class="wrap-input2 validate-input"><!--input dels llinatges-->
+							<input class="input2" type="text" name="llinatges" id="llinatges">
+							<span class="focus-input2" data-placeholder="LLINATGES"></span>
+						</div>
+						<div class="wrap-input2 validate-input"><!--input del DNI-->
+							<input class="input2" type="text" name="dni" id="dni">
+							<span class="focus-input2" data-placeholder="DNI"></span>
+						</div>
+						<div class="wrap-input2 validate-input"><!--input del correu-->
+							<input class="input2" type="text" name="email" id="email">
+							<span class="focus-input2" data-placeholder="EMAIL"></span>
+						</div>
+						<div class="wrap-input2 validate-input" id="nota1"><!--select de la nota-->
+							Nota
+							<select class="input2" type="number" name="nota" id="nota" min="0" max="10">
+								<option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+							</select>
+							<span class="focus-input2" ></span>
+						</div>
+						<div class="container-contact2-form-btn">
+							<div class="wrap-contact2-form-btn">
+								<div class="contact2-form-bgbtn"></div>
+								<div class="animated shake"><!--he posat animacions per provar-les, 
+								si haguès de fer una web més formal no la carregaria tant amb animacions-->
+								<button type="submit" class="contact2-form-btn"><!--botó-->
+									Registra't
+								</button>
+							    </div>
+						    </div>
+					    </div>
+					</form>
+				</div>
+				<div id="divtaula"  class="animated wobble"><!--he posat animacions per provar-les, 
+					si haguès de fer una web sèria no la carregaria tant amb animacions-->
+					<table id="taula" class="table table-hover"><!--taula on s'introdueixen els alumnes registrats-->
+						<tr>
+							<td><b>NOM</b></td>
+						    <td><b>LLINATGES</b></td>
+						    <td><b>DNI</b></td>
+						    <td><b>EMAIL</b></td>
+						    <td><b>NOTA</b></td>
+						    <td></td>
+					    </tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+	<!--Per: Victòria Binimelis Vadell. Febrer 2018-->
+</html>
